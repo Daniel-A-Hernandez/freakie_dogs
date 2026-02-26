@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {logo} from './assets/freakie_logo.jpg';
 import { 
   Instagram, 
   MapPin, 
@@ -62,7 +63,7 @@ const App = () => {
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-2 group cursor-pointer transition-transform hover:scale-110">
             <div className="w-14 h-14 bg-red-600 rounded-2xl rotate-3 flex items-center justify-center overflow-hidden border-4 border-yellow-400 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-               <img src="../src/assets/freakie_logo.jpg" alt="" />
+               <img src={logo} alt="Freakie Dogs Logo" />
             </div>
             <span className="font-black text-3xl tracking-tighter text-red-600 uppercase italic">FreakieDogs</span>
           </div>
